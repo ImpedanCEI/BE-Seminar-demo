@@ -5,7 +5,6 @@ Involving our in-house python-packages of the impedance assessment workflow:
 * [`Wakis`](https://github.com/ImpedanCEI/wakis) for the 3D electromagnetic wakefield simulations,
 * [`IDDEFIX`](https://github.com/ImpedanCEI/IDDEFIX) for partially decayed wake extrapolation,
 * [`BIHC`](https://github.com/ImpedanCEI/BIHC) for impedance-induced beam power loss, and
-* [`neffint`](https://github.com/ImpedanCEI/neffint) for impedance to wake function conversion for beam dynamics simulations.
 
 ## Getting started
 You can install wakis from GitHub to have the latest changes into your conda environment (Python>3.9 and <=3.12):
@@ -41,7 +40,7 @@ pip install ipyparallel
 To achieve multithreading for Wakis `sparse matrix x vector` operations, the Intel-MKL backend has been implemented as an alternative to single-threaded `scipy.sparse.dot`. To install it in your conda environment simply do:
 
 ```
-conda create --name wakis-env python=3.12 numpy scipy mkl mkl-service
+conda create --name wakis-env python=3.12 mkl mkl-service
 pip install sparse_dot_mkl
 ```
 
